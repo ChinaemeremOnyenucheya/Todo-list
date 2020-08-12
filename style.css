@@ -1,0 +1,174 @@
+* {margin: 0; padding: 0;}
+
+body {background-color: #f2f1ef;}
+
+.container-div {
+	height: 450px;
+	width: 400px;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;	
+	border:2px solid #006442;
+	border-radius: 15px 50px;}
+
+h2{margin-top: 5%;
+   margin-bottom: 3%; 
+   color: #Ffb61e;}
+
+.container-description{
+	display: flex;
+	flex-direction: column;
+	align-items: center;}
+
+.container-description p{
+	font-size: 0.95rem;}
+
+.container-todo{
+	display: flex;
+	margin:7% 8%;}
+
+input{
+	height: 25px;
+	text-align:  center;
+	border: 2px solid #407A52;}
+
+input:last-of-type{margin-left: 10px;}
+
+#buttonAdd {
+	height: 30px;
+	background-color: #407A52;
+	color: #fff;
+	border: 2px solid #407A52;
+	outline: none;
+	margin-left: 25px;}
+
+button:hover {cursor: pointer;}
+
+/*Incomplete task styling section*/
+.container-incomplete{margin:4%;}
+
+.container-incomplete h4{
+	   text-align: center; 
+	   background-color: #407A52;
+	   color:#fff;
+	   padding: 5px;}
+
+.task-list{
+	   margin-top:10px;
+       margin-left:18px;}
+
+.task-list li{
+	   display: flex;
+	   padding:5px;}
+
+.task-list li p{flex: 0 0 75%;}
+
+.extractButton{
+	   background-color:#407A52;
+	   color:#fff;
+	   border:2px solid #407A52;
+	   outline: none;}
+
+/*Completed task section styling*/
+.container-complete{margin: 4%;}
+
+.container-complete h4{
+	        text-align: center; 
+	        padding: 5px;
+	        background-color: #407A52;
+	        color:#fff;}
+
+.list-completed{
+	        margin-top:10px;
+	        margin-left: 20px;}
+
+.list-completed li{
+	        display: flex;
+	        padding:5px;}
+	           
+.list-completed li p{flex: 0 0 75%;}
+
+.delete{
+         width:100px;
+	     background-color:#ca6924;
+	     color:#fff;
+	     border: 2px solid #ca6924;
+	     outline: none;}
+
+/*Screen adjustment*/
+@media screen and (max-width: 320px){
+
+.container-div{width: 280px;}
+
+.container-description p{text-align: center;}
+
+input{width: 65%;}
+
+#buttonAdd{
+	   width: 55%; 
+	   border-radius:5px;}
+
+.extractButton{
+	   width: 40%; 
+	   border-radius:5px;
+	   height:20px;}
+
+.delete{
+	    width: 40%; 
+	    border-radius:5px;
+	    height:20px;}
+
+.task-list li p{flex: 0 0 60%;}
+
+.list-completed li p{flex: 0 0 60%;}
+
+}  
+
+@media screen and (min-width: 375px){
+
+    .container-div{width: 347px;}
+       input{width: 50%;}
+
+    #buttonAdd{
+	   width: 45%; 
+	   border-radius:5px;}
+
+    .extractButton{
+	   border-radius:5px;
+	   height:20px;}
+
+    .delete{
+	    border-radius:5px;
+	    height:20px;}
+}
+  
+@media screen and (min-width: 425px){
+
+    input{width: 73%;}
+
+    #buttonAdd{
+	   width: 50%; 
+	   border-radius:5px;}
+}
+
+@media screen and (min-width: 768px){
+
+    input{width: 75%;}
+
+    #buttonAdd{
+	   width: 50%; 
+	   border-radius:5px;}
+
+    .extractButton{
+	   border-radius:5px;
+	   height:20px;}
+
+    .delete{
+	    border-radius:5px;
+	    height:20px;}
+}
+
+
+
+
+
